@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="60d3abb5-b99b-4e6e-b51c-5f56fbf0fa1f" name="Changes" comment="" />
+    <list default="true" id="60d3abb5-b99b-4e6e-b51c-5f56fbf0fa1f" name="Changes" comment="prettier">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.rcb.palette" />
+        <option value="com.haulmont.rcb.previews" />
+        <option value="com.haulmont.rcb.index" />
+        <option value="com.haulmont.rcb.useInitial" />
+        <option value="com.haulmont.rcb.README" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2jkcDHUFzDah7hvdMAv6UkFM1Vg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,13 +45,167 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.CategoryOverview.executor": "Run",
+    "Jest.CategoryOverview.renders without crashing when no selectedCategory is provided.executor": "Run",
+    "Jest.HighChart.does not initialize the chart when productData is empty.executor": "Run",
+    "Jest.HighChart.executor": "Run",
+    "Jest.HighChart.handles empty productData gracefully.executor": "Run",
+    "Jest.HighChart.renders the component and initializes the chart.executor": "Run",
+    "Jest.HighChart.updates chart when metric changes.executor": "Run",
+    "Jest.ProductTable component.executor": "Run",
+    "Jest.ProductTable.executor": "Run",
+    "Jest.StoreContext.executor": "Run",
+    "Jest.Tests for High Chart.executor": "Run",
+    "Jest.Tests for High Chart.renders the component and initializes the chart.executor": "Run",
+    "Jest.Tests for HighChart.executor": "Run",
+    "Jest.Tests for HighChart.handles empty productData gracefully.executor": "Run",
+    "Jest.Tests for Product Table.executor": "Run",
+    "Jest.useFetch.executor": "Run",
+    "Jest.useFetch.should return data on successful fetch.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jatin/IdeaProjects/nielsen-storefront/src/tests/context",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/jatin/IdeaProjects/nielsen-storefront/node_modules/react-scripts",
     "nodejs_package_manager_path": "npm",
+    "npm.React Buddy Preview.executor": "Run",
+    "npm.prettier.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.test2.executor": "Run",
+    "npm.test:coverage.executor": "Run",
+    "ts.external.directory.path": "/Users/jatin/IdeaProjects/nielsen-storefront/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests/context" />
+      <recent name="$PROJECT_DIR$/src/tests" />
+      <recent name="$PROJECT_DIR$/src/tests/components" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/context" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests" />
+      <recent name="$PROJECT_DIR$/src/components/SelectionCriterias" />
+      <recent name="$PROJECT_DIR$/src/components/CategoryVisualizations" />
+      <recent name="$PROJECT_DIR$/src/components/Product" />
+      <recent name="$PROJECT_DIR$/src/components/CategoryOverview" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Tests for useFetch">
+    <configuration name="HighChart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/components/HighChart.test.tsx" />
+      <test-names>
+        <test-name value="HighChart" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTable" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/components/ProductTable.test.tsx" />
+      <test-names>
+        <test-name value="ProductTable" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="StoreContext" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/context/StoreContext.test.tsx" />
+      <test-names>
+        <test-name value="StoreContext" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests for Store Context Provider" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/context/StoreContext.test.tsx" />
+      <test-names>
+        <test-name value="Tests for Store Context Provider" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests for useFetch" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/hooks/useFetch.test.ts" />
+      <test-names>
+        <test-name value="Tests for useFetch" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.ProductTable" />
+      <item itemvalue="Jest.Tests for Store Context Provider" />
+      <item itemvalue="Jest.Tests for useFetch" />
+      <item itemvalue="Jest.HighChart" />
+      <item itemvalue="Jest.StoreContext" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Tests for useFetch" />
+        <item itemvalue="Jest.Tests for Store Context Provider" />
+        <item itemvalue="Jest.StoreContext" />
+        <item itemvalue="Jest.ProductTable" />
+        <item itemvalue="Jest.HighChart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,10 +215,133 @@
       <option name="presentableId" value="Default" />
       <updated>1721934393942</updated>
       <workItem from="1721934394944" duration="54000" />
+      <workItem from="1721934856691" duration="2559000" />
+      <workItem from="1721938252211" duration="8996000" />
+      <workItem from="1721947532434" duration="16027000" />
+      <workItem from="1722022148203" duration="11879000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1721942265647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721942265647</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit 3">
+      <option name="closed" value="true" />
+      <created>1721954394186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721954394186</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commit 4">
+      <option name="closed" value="true" />
+      <created>1722009898807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722009898807</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tests added">
+      <option name="closed" value="true" />
+      <created>1722023515875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722023515875</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adding prettier">
+      <option name="closed" value="true" />
+      <created>1722024693441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722024693441</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding prettier">
+      <option name="closed" value="true" />
+      <created>1722024820885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722024820885</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding prettier and theme">
+      <option name="closed" value="true" />
+      <created>1722028916113</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722028916113</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding comments and tests">
+      <option name="closed" value="true" />
+      <created>1722031705663</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722031705663</updated>
+    </task>
+    <task id="LOCAL-00009" summary="minor bug fix">
+      <option name="closed" value="true" />
+      <created>1722031982236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722031982236</updated>
+    </task>
+    <task id="LOCAL-00010" summary="making font a bit nicer">
+      <option name="closed" value="true" />
+      <created>1722032848408</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722032848408</updated>
+    </task>
+    <task id="LOCAL-00011" summary="prettier">
+      <option name="closed" value="true" />
+      <created>1722032929666</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722032929666</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="initial commit 3" />
+    <MESSAGE value="initial commit 4" />
+    <MESSAGE value="tests added" />
+    <MESSAGE value="adding prettier" />
+    <MESSAGE value="Adding prettier and theme" />
+    <MESSAGE value="Adding comments and tests" />
+    <MESSAGE value="minor bug fix" />
+    <MESSAGE value="making font a bit nicer" />
+    <MESSAGE value="prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="prettier" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/tests/components/ProductTable.test.tsx</url>
+          <line>4</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/tests/context/StoreContext.test.tsx</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
