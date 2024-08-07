@@ -7,12 +7,17 @@ import styled from 'styled-components';
 
 // Styled components
 const Container = styled.div`
-     padding: 30px;
-     display: flex;
-     gap: 20px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
 `;
 
-const AppContent: React.FC = () => {
+interface AppProps {
+     toggleTheme: () => void;
+     isDarkMode: boolean;
+}
+
+const AppContent: React.FC<AppProps> = ({ toggleTheme, isDarkMode }) => {
      // Destructuring values and methods from Store Context
      const {
           categories,
@@ -25,10 +30,8 @@ const AppContent: React.FC = () => {
 
      return (
           <div>
-               {/* Header of the application - essentially the app bar */}
-               <Header />
+               <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
                <Container>
-                    {/* Selection Criteria - houses the 2 dropdowns */}
                     <SelectionCriteria
                          categories={categories}
                          selectedCategory={selectedCategory}
@@ -37,7 +40,6 @@ const AppContent: React.FC = () => {
                          selectedProduct={selectedProduct}
                          setSelectedProduct={setSelectedProduct}
                     />
-                    {/* Data Overview - renders the visualizations based on user selection */}
                     <DataOverview
                          selectedCategory={selectedCategory}
                          selectedProduct={selectedProduct}
@@ -48,10 +50,10 @@ const AppContent: React.FC = () => {
 };
 
 // Main app component that provides the store context for global state management
-const App: React.FC = () => {
+const App: React.FC<AppProps> = (props) => {
      return (
           <StoreProvider>
-               <AppContent />
+               <AppContent {...props} />
           </StoreProvider>
      );
 };

@@ -1,6 +1,10 @@
 import { createTheme } from '@mui/material/styles';
 
-const theme = createTheme({
+// Light Theme
+const lightTheme = createTheme({
+     palette: {
+          mode: 'light',
+     },
      components: {
           MuiAppBar: {
                styleOverrides: {
@@ -49,4 +53,57 @@ const theme = createTheme({
      },
 });
 
-export default theme;
+// Dark Theme
+const darkTheme = createTheme({
+     palette: {
+          mode: 'dark',
+     },
+     components: {
+          MuiAppBar: {
+               styleOverrides: {
+                    root: {
+                         backgroundColor: '#333333',
+                         '& .MuiTypography-root': {
+                              color: '#FFFFFF',
+                         },
+                         height: '70px',
+                    },
+               },
+          },
+          MuiTextField: {
+               styleOverrides: {
+                    root: {
+                         backgroundColor: '#424242',
+                    },
+               },
+          },
+          MuiTypography: {
+               styleOverrides: {
+                    h6: {
+                         color: '#FFFFFF',
+                         fontWeight: 'bold',
+                    },
+                    h5: {
+                         flexGrow: 1,
+                         textAlign: 'center',
+                         fontWeight: 'bold',
+                    },
+                    h4: {
+                         flexGrow: 1,
+                         textAlign: 'center',
+                         fontWeight: 'bold',
+                    },
+                    body1: {
+                         textAlign: 'left',
+                         marginBottom: '8px',
+                         textTransform: 'uppercase',
+                    },
+               },
+          },
+     },
+     typography: {
+          fontFamily: '"Avenir", "Helvetica", "Arial", sans-serif',
+     },
+});
+
+export { lightTheme, darkTheme };

@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from './styles/theme';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { lightTheme, darkTheme } from './styles/theme'; // Import both themes
 
 const root = ReactDOM.createRoot(
      document.getElementById('root') as HTMLElement,
 );
+
+const Main: React.FC = () => {
+     const [isDarkMode, setIsDarkMode] = useState(false);
+
+     const toggleTheme = () => {
+          setIsDarkMode(!isDarkMode);
+     };
+
+     return (
+          <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+               <CssBaseline />
+               <App toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+          </ThemeProvider>
+     );
+};
+
 root.render(
      <React.StrictMode>
-          <ThemeProvider theme={theme}>
-               <App />
-          </ThemeProvider>
+          <Main />
      </React.StrictMode>
 );
 
