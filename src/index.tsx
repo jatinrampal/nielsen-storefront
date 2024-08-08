@@ -4,7 +4,9 @@ import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import { lightTheme, darkTheme } from './styles/theme'; // Import both themes
+import { lightTheme, darkTheme } from './styles/theme';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 
 const root = ReactDOM.createRoot(
      document.getElementById('root') as HTMLElement,
@@ -27,8 +29,10 @@ const Main: React.FC = () => {
 
 root.render(
      <React.StrictMode>
-          <Main />
-     </React.StrictMode>
+          <I18nextProvider i18n={i18n}>
+               <Main />
+          </I18nextProvider>
+     </React.StrictMode>,
 );
 
 reportWebVitals();

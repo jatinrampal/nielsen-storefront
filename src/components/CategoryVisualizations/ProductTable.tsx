@@ -8,8 +8,9 @@ import {
      TableRow,
      Paper,
 } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
-//Interface for product details
+// Interface for product details
 interface Product {
      id: number;
      title: string;
@@ -26,16 +27,18 @@ interface ProductTableProps {
 }
 
 const ProductTable: React.FC<ProductTableProps> = ({ productData }) => {
+     const { t } = useTranslation();
+
      return (
           <TableContainer component={Paper} sx={{ marginTop: '20px' }}>
-               <Table aria-label="product table">
+               <Table aria-label={t('productTableLabel')}>
                     <TableHead>
                          <TableRow>
-                              <TableCell>Product</TableCell>
-                              <TableCell>Price</TableCell>
-                              <TableCell>Description</TableCell>
+                              <TableCell>{t('product')}</TableCell>
+                              <TableCell>{t('price')}</TableCell>
+                              <TableCell>{t('description')}</TableCell>
                               <TableCell sx={{ textAlign: 'center' }}>
-                                   Rating
+                                   {t('rating')}
                               </TableCell>
                          </TableRow>
                     </TableHead>
@@ -49,8 +52,10 @@ const ProductTable: React.FC<ProductTableProps> = ({ productData }) => {
                                    <TableCell>{product.description}</TableCell>
                                    <TableCell sx={{ textAlign: 'center' }}>
                                         {/* Adding additional info for number of reviews */}
-                                        {product.rating?.rate ?? 'N/A'} based on{' '}
-                                        {product.rating?.count ?? '0'} reviews
+                                        {product.rating?.rate ?? t('n/a')}{' '}
+                                        {t('basedOn')}{' '}
+                                        {product.rating?.count ?? t('zero')}{' '}
+                                        {t('reviews')}
                                    </TableCell>
                               </TableRow>
                          ))}

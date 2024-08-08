@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 import styled from 'styled-components';
 import { Typography, Box, CircularProgress } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 // Interface for receiving props
 interface ProductOverviewProps {
@@ -52,6 +53,8 @@ const Details: React.FC<ProductOverviewProps> = ({
      selectedCategory,
      selectedProduct,
 }) => {
+     const { t } = useTranslation();
+
      // State for product details
      const [product, setProduct] = useState<Product | null>(null);
 
@@ -85,7 +88,7 @@ const Details: React.FC<ProductOverviewProps> = ({
      if (error) {
           return (
                <Typography variant="body1" align="center">
-                    Failed to load product data
+                    {t('failedToLoadData')}
                </Typography>
           );
      }
@@ -93,7 +96,7 @@ const Details: React.FC<ProductOverviewProps> = ({
      if (!product) {
           return (
                <Typography variant="body1" align="center">
-                    Product not found
+                    {t('productNotFound')}
                </Typography>
           );
      }
@@ -113,10 +116,10 @@ const Details: React.FC<ProductOverviewProps> = ({
                >
                     <InfoContainer>
                          <Typography variant="body1">
-                              {product.category}
+                             {product.category}
                          </Typography>
                          <Typography variant="body1">
-                              <strong>SKU:</strong> {product.id}
+                              <strong>{t('sku')}:</strong> {product.id}
                          </Typography>
                          <Typography
                               variant="h4"
@@ -131,7 +134,7 @@ const Details: React.FC<ProductOverviewProps> = ({
                                    product.image ||
                                    'https://via.placeholder.com/200'
                               }
-                              alt={product.title || 'Product Image'}
+                              alt={product.title || t('productImageAlt')}
                          />
                     </ImageContainer>
                </Box>

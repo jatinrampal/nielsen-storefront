@@ -1,0 +1,28 @@
+{
+     "storeTitle": "La Tienda Fabulosa de Jatin",
+     "selectCategory": "Por favor, seleccione la categoría",
+     "selectProduct": "Por favor, seleccione el producto",
+     "pleaseSelectCategory": "Por favor, seleccione una categoría",
+     "chartTitle": "Comparación de Productos",
+     "productLabel": "Producto",
+     "metric": {
+          "price": "Precio",
+          "rating": "Calificación"
+     },
+     "productsSeriesName": "Productos",
+     "metricLabel": "Métrica",
+     "price": "Precio",
+     "rating": "Calificación",
+     "productTableLabel": "Tabla de Productos",
+     "product": "Producto",
+     "description": "Descripción",
+     "n/a": "N/A",
+     "basedOn": "basado en",
+     "zero": "0",
+     "reviews": "reseñas",
+     "failedToLoadData": "No se pudieron cargar los datos del producto",
+     "productNotFound": "Producto no encontrado",
+     "category": "Categoría",
+     "sku": "SKU",
+     "productImageAlt": "Imagen del Producto"
+}

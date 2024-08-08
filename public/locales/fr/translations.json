@@ -1,0 +1,28 @@
+{
+     "storeTitle": "La Boutique Fabuleuse de Jatin",
+     "selectCategory": "Veuillez sélectionner la catégorie",
+     "selectProduct": "Veuillez sélectionner le produit",
+     "pleaseSelectCategory": "Veuillez sélectionner une catégorie",
+     "chartTitle": "Comparaison des Produits",
+     "productLabel": "Produit",
+     "metric": {
+          "price": "Prix",
+          "rating": "Évaluation"
+     },
+     "productsSeriesName": "Produits",
+     "metricLabel": "Métrique",
+     "price": "Prix",
+     "rating": "Évaluation",
+     "productTableLabel": "Tableau des Produits",
+     "product": "Produit",
+     "description": "Description",
+     "n/a": "N/A",
+     "basedOn": "basé sur",
+     "zero": "0",
+     "reviews": "avis",
+     "failedToLoadData": "Échec du chargement des données du produit",
+     "productNotFound": "Produit non trouvé",
+     "category": "Catégorie",
+     "sku": "SKU",
+     "productImageAlt": "Image du Produit"
+}

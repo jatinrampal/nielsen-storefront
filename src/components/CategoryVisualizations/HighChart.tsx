@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Highcharts from 'highcharts';
 import { TextField, MenuItem, Paper, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useTranslation } from 'react-i18next';
 
 // Interface for Product data
 interface Product {
@@ -19,6 +20,7 @@ interface ProductChartProps {
 
 // Highchart Component
 const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
+     const { t } = useTranslation();
      // Variable to manage state of selected metric
      const [metric, setMetric] = useState<'price' | 'rating'>('price');
 
@@ -63,13 +65,13 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                          backgroundColor: theme.palette.background.default,
                     },
                     title: {
-                         text: 'Product Comparison',
+                         text: t('chartTitle'),
                          style: textStyle,
                     },
                     xAxis: {
                          type: 'category',
                          title: {
-                              text: 'Product',
+                              text: t('productLabel'),
                               style: textStyle,
                          },
                          labels: {
@@ -78,9 +80,7 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                     },
                     yAxis: {
                          title: {
-                              text:
-                                   metric.charAt(0).toUpperCase() +
-                                   metric.slice(1),
+                              text: t(`metric.${metric}`),
                               style: textStyle,
                          },
                          labels: {
@@ -92,14 +92,14 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                     },
                     series: [
                          {
-                              name: 'Products',
+                              name: t('productsSeriesName'),
                               data: chartData,
                          },
                     ],
                     colors: [theme.palette.secondary.main],
                } as Highcharts.Options);
           }
-     }, [productData, metric, theme]);
+     }, [productData, metric, theme, t]);
 
      return (
           <Paper
@@ -113,7 +113,7 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                {/* Dropdown for metric */}
                <TextField
                     select
-                    label="Metric"
+                    label={t('metricLabel')}
                     value={metric}
                     onChange={handleMetricChange}
                     style={{
@@ -125,8 +125,8 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                     }}
                     data-testid="metric-select"
                >
-                    <MenuItem value="price">Price</MenuItem>
-                    <MenuItem value="rating">Rating</MenuItem>
+                    <MenuItem value="price">{t('price')}</MenuItem>{' '}
+                    <MenuItem value="rating">{t('rating')}</MenuItem>{' '}
                </TextField>
                <Box
                     ref={chartRef}

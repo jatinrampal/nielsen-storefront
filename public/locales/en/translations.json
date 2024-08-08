@@ -1,0 +1,28 @@
+{
+     "storeTitle": "Jatin's Fabulous Store",
+     "selectCategory": "Please select the category",
+     "selectProduct": "Please select the product",
+     "pleaseSelectCategory": "Please select a category",
+     "chartTitle": "Product Comparison",
+     "productLabel": "Product",
+     "metric": {
+          "price": "Price",
+          "rating": "Rating"
+     },
+     "productsSeriesName": "Products",
+     "metricLabel": "Metric",
+     "price": "Price",
+     "rating": "Rating",
+     "productTableLabel": "Product Table",
+     "product": "Product",
+     "description": "Description",
+     "n/a": "N/A",
+     "basedOn": "based on",
+     "zero": "0",
+     "reviews": "reviews",
+     "failedToLoadData": "Failed to load product data",
+     "productNotFound": "Product not found",
+     "category": "Category",
+     "sku": "SKU",
+     "productImageAlt": "Product Image"
+}

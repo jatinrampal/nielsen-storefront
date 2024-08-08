@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box, SelectChangeEvent } from '@mui/material';
 import Dropdown from './Dropdown';
+import { useTranslation } from 'react-i18next';
 
 // Styled component
 const StyledBox = styled(Box)`
@@ -26,6 +27,8 @@ const SelectionCriteria: React.FC<SelectionCriteriaProps> = ({
      selectedProduct,
      setSelectedProduct,
 }) => {
+     const { t } = useTranslation();
+
      const handleCategoryChange = (event: SelectChangeEvent<string>) => {
           setSelectedCategory(event.target.value as string);
           setSelectedProduct('');
@@ -38,7 +41,7 @@ const SelectionCriteria: React.FC<SelectionCriteriaProps> = ({
      return (
           <StyledBox>
                <Dropdown
-                    label="Category"
+                    label={t('category')}
                     value={selectedCategory}
                     options={categories}
                     onChange={handleCategoryChange}
@@ -48,7 +51,7 @@ const SelectionCriteria: React.FC<SelectionCriteriaProps> = ({
                     }}
                />
                <Dropdown
-                    label="Product"
+                    label={t('product')}
                     value={selectedProduct}
                     options={products}
                     onChange={handleProductChange}

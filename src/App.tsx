@@ -4,6 +4,7 @@ import SelectionCriteria from './components/SelectionCriterias/SelectionCriteria
 import DataOverview from './components/CategoryVisualizations/DataOverview';
 import Header from './components/Header';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 // Styled components
 const Container = styled.div`
@@ -18,7 +19,8 @@ interface AppProps {
 }
 
 const AppContent: React.FC<AppProps> = ({ toggleTheme, isDarkMode }) => {
-     // Destructuring values and methods from Store Context
+     const { i18n } = useTranslation();
+
      const {
           categories,
           selectedCategory,
@@ -28,9 +30,17 @@ const AppContent: React.FC<AppProps> = ({ toggleTheme, isDarkMode }) => {
           setSelectedProduct,
      } = useStore();
 
+     const changeLanguage = (language: string) => {
+          i18n.changeLanguage(language);
+     };
+
      return (
           <div>
-               <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+               <Header
+                    toggleTheme={toggleTheme}
+                    isDarkMode={isDarkMode}
+                    changeLanguage={changeLanguage}
+               />
                <Container>
                     <SelectionCriteria
                          categories={categories}
