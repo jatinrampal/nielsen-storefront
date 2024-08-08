@@ -7,9 +7,9 @@ import styled from 'styled-components';
 
 // Styled components
 const Container = styled.div`
-    padding: 30px;
-    display: flex;
-    gap: 20px;
+     padding: 30px;
+     display: flex;
+     gap: 20px;
 `;
 
 interface AppProps {

@@ -4,6 +4,13 @@ import { createTheme } from '@mui/material/styles';
 const lightTheme = createTheme({
      palette: {
           mode: 'light',
+          primary: {
+               main: '#000000',
+          },
+          secondary: {
+               main: '#B3E5FC',
+          },
+          background: { default: '#FFFFFF' },
      },
      components: {
           MuiAppBar: {
@@ -57,6 +64,13 @@ const lightTheme = createTheme({
 const darkTheme = createTheme({
      palette: {
           mode: 'dark',
+          primary: {
+               main: '#FAEBD7',
+          },
+          secondary: {
+               main: '#B3E5FC',
+          },
+          background: { default: 'black' },
      },
      components: {
           MuiAppBar: {

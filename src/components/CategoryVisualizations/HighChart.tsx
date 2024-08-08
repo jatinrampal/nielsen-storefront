@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Highcharts from 'highcharts';
 import { TextField, MenuItem, Paper, Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 // Interface for Product data
 interface Product {
@@ -16,16 +17,18 @@ interface ProductChartProps {
      productData: Product[];
 }
 
-//Highchart Component
+// Highchart Component
 const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
-     //Variable to manage state of selected metric
+     // Variable to manage state of selected metric
      const [metric, setMetric] = useState<'price' | 'rating'>('price');
 
-     //Refs for Chart and ChartInstance
+     // Refs for Chart and ChartInstance
      const chartRef = useRef<HTMLDivElement | null>(null);
      const chartInstanceRef = useRef<Highcharts.Chart | null>(null);
 
-     //Handler for metric change
+     const theme = useTheme();
+
+     // Handler for metric change
      const handleMetricChange = (
           event: React.ChangeEvent<HTMLInputElement>,
      ) => {
@@ -42,33 +45,61 @@ const HighChart: React.FC<ProductChartProps> = ({ productData }) => {
                               : product.rating?.rate,
                }));
 
-               //Destroying previous chart as per best practices
+               // Destroying previous chart as per best practices
                if (chartInstanceRef.current) {
                     chartInstanceRef.current.destroy();
                }
 
-               //Initialising chart instance
+               const textStyle = {
+                    fontFamily: 'Avenir',
+                    color: theme.palette.primary.main,
+               };
+
+               // Initialising chart instance
                chartInstanceRef.current = Highcharts.chart(chartRef.current, {
                     chart: {
                          type: 'column',
-                         style: {
-                              fontFamily: 'Avenir',
+                         style: textStyle,
+                         backgroundColor: theme.palette.background.default,
+                    },
+                    title: {
+                         text: 'Product Comparison',
+                         style: textStyle,
+                    },
+                    xAxis: {
+                         type: 'category',
+                         title: {
+                              text: 'Product',
+                              style: textStyle,
+                         },
+                         labels: {
+                              style: textStyle,
                          },
                     },
-                    title: { text: 'Product Comparison' },
-                    xAxis: { type: 'category', title: { text: 'Product' } },
                     yAxis: {
                          title: {
                               text:
                                    metric.charAt(0).toUpperCase() +
                                    metric.slice(1),
+                              style: textStyle,
+                         },
+                         labels: {
+                              style: textStyle,
                          },
                     },
-                    series: [{ name: 'Products', data: chartData }],
-                    colors: ['#B3E5FC'],
+                    legend: {
+                         itemStyle: textStyle,
+                    },
+                    series: [
+                         {
+                              name: 'Products',
+                              data: chartData,
+                         },
+                    ],
+                    colors: [theme.palette.secondary.main],
                } as Highcharts.Options);
           }
-     }, [productData, metric]);
+     }, [productData, metric, theme]);
 
      return (
           <Paper
